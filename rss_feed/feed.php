@@ -11,7 +11,7 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
 <script type="text/javascript">
-	
+  
 
 function display_ct() {
 var strcount
@@ -23,7 +23,7 @@ mytime=setTimeout('display_ct()',1000);
 
 
 function calctime()
-{	var t=setTimeout("calctime()",1000);
+{ var t=setTimeout("calctime()",1000);
 var p=Math.floor(t/120);
 var s= t-p*120;
 
@@ -32,8 +32,8 @@ var s= t-p*120;
 
 }
 function start(){
-	display_ct();
-	calctime();
+  display_ct();
+  calctime();
 }
 
 </script>
@@ -47,7 +47,7 @@ function start(){
 
 
 
-	$('#0').click(function(){
+  $('#0').click(function(){
      
        $("div0").hide();
       
@@ -194,11 +194,11 @@ $xml = simplexml_load_file($url);
 for($i = 0; $i < 10; $i++){
 
 $author = $xml->entry[$i]->author->name;
-	$uri = $xml->entry[$i]->author->uri;
-	$id = $xml->entry[$i]->id;
-	$title = $xml->entry[$i]->title;
-	$content = $xml->entry[$i]->content;
-	$html .= "<div$i><h3><a href='$uri' >$title</a></h3><br>$content <br/> 
+  $uri = $xml->entry[$i]->author->uri;
+  $id = $xml->entry[$i]->id;
+  $title = $xml->entry[$i]->title;
+  $content = $xml->entry[$i]->content;
+  $html .= "<div$i><h3><a href='$uri' >$title</a></h3><br>$content <br/> 
     <button id='$i' class='btn btn-success'>Hide Feed</button><hr>";
 //echo "<p><div$i><a href='#' class='btn btn-success'>Learn More</a></p>";
 }
@@ -215,11 +215,11 @@ $author = $xml->entry[$i]->author->name;
     <div class="row">
         <div class="col-sm-12">
             <footer>
-              <center> Created by <p><a href="mailto:rajkmaurya111@gmail.com"><strong>Raj Kumar Maurya</strong></p> 
+              <center> Created by <p><a href="mailto:rajkmaurya111@gmail.com"><strong><h5>Raj Kumar Maurya</h5></strong></p> 
                  <a href="https://github.com/raj-maurya/RSS-Feed-Reader" ><span class="fa fa-github"></span>See on GitHub</a></center> 
             </footer>
         </div>
     </div>
 </div>
 </body>
-</html>                                		
+</html>                                   
